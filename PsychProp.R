@@ -107,7 +107,7 @@ ui <- navbarPage(
              actionButton("rodar_tic", "Curva de Informação do Teste"),
              plotOutput('curvas_tic'),
              h1(''),
-             downloadButton("downloadTICC", "Exportar Curva TIC"),
+             downloadButton("downloadTIC", "Exportar Curva TIC"),
            )
   ),
   
@@ -416,7 +416,7 @@ server <- function(input, output, session) {
     # Armazene o modelo para uso posterior
     output$curvas_iic <- renderPlot({
       mirt::plot(fit, 
-                 type = 'trace', 
+                 type = 'infotrace', 
                  which.item = 1:input$n_itens,
                  facet_items = TRUE,
                  as.table = TRUE,
@@ -424,6 +424,7 @@ server <- function(input, output, session) {
                                  columns = 4, space = 'top', cex = .8),
                  theta_lim = c(-3, 3),
                  main = "")
+    
     })
     
     output$downloadIIC <- downloadHandler(
@@ -464,15 +465,8 @@ server <- function(input, output, session) {
     
     # Armazene o modelo para uso posterior
     output$curvas_tic <- renderPlot({
-      mirt::plot(fit, 
-                 type = 'trace', 
-                 which.item = 1:input$n_itens,
-                 facet_items = TRUE,
-                 as.table = TRUE,
-                 auto.key = list(points = FALSE, lines = TRUE, 
-                                 columns = 4, space = 'top', cex = .8),
-                 theta_lim = c(-3, 3),
-                 main = "")
+      mirt::plot(fit, type = 'info', 
+                 theta_lim = c(-3, 3), main = "")
     })
     
     output$downloadTIC <- downloadHandler(
