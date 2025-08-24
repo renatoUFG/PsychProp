@@ -3587,6 +3587,9 @@
     ".Rbuildignore": {
       "checksum": "5fe2613f0084cfac9853279a7a336fa2"
     },
+    "app.R": {
+      "checksum": "7b451d47c4e3fe5a52f3e7f60092039b"
+    },
     "install_dependencies.R": {
       "checksum": "92c0a22c9450c4ddaa3dbc23e4af7084"
     },
@@ -3595,9 +3598,6 @@
     },
     "LICENSE.md": {
       "checksum": "29a9012941a6bcb26bf0fb4382c5dd75"
-    },
-    "PsychProp.R": {
-      "checksum": "7b451d47c4e3fe5a52f3e7f60092039b"
     },
     "README.md": {
       "checksum": "6a2887efdcf73224c43034d80a1643e6"
