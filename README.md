@@ -38,13 +38,13 @@ The spreadsheet should include **only the scale items**; any other variables col
 
 ### Using RStudio IDE
 
-Open the `PsychProp.R` file in RStudio and click **Run App**.
+Open the `app.R` file in RStudio and click **Run App**.
 
 ### Using the Windows Terminal
 
 1. Open Command Prompt (cmd.exe) or PowerShell.  
-2. Navigate to the folder containing `PsychProp.R`.  
-3. Run: `Rscript PsychProp.R`
+2. Navigate to the folder containing `app.R`.  
+3. Run: `Rscript app.R`
 
 Note: If you receive an error like "command not found" when running `Rscript`, check that R is in your system's PATH.
 

@@ -43,12 +43,12 @@ ser removidas.
 
 ### Usando a IDE RStudio
 
-Abra o arquivo `PsychProp.R` no RStudio e clique em **Run App**.
+Abra o arquivo `app.R` no RStudio e clique em **Run App**.
 
 ### Usando o terminal do Windows
 
 1. Abra o Prompt de Comando (cmd.exe) ou PowerShell.
-2. Navegue até a pasta onde está PsychProp.R
+2. Navegue até a pasta onde está app.R
 3. Execute: Rscript app.R
 
 Obs: Se ao rodar Rscript você receber erro do tipo “comando não encontrado”, verifique se o R está no seu PATH do sistema.:
@@ -57,7 +57,7 @@ Obs: Se ao rodar Rscript você receber erro do tipo “comando não encontrado�
 
 1. Abra o terminal.
 2. Vá até a pasta 
-3. Execute:  Rscript PsychProp.R
+3. Execute:  Rscript app.R
 
 ### Usando arquivo executável no Windows
 
